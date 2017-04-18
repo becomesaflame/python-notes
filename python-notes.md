@@ -5,3 +5,10 @@
 `dir(thing)`: prints a list of the functions of thing
 
 
+## main
+
+```
+if __name__ == '__main__':
+```
+
+
