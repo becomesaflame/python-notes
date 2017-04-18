@@ -12,3 +12,6 @@ if __name__ == '__main__':
 ```
 
 
+## Hashbang
+
+Add `#!/usr/bin/env python3` at the beginning of a file and make it executeable to run it from a Unix shell.
