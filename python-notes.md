@@ -11,6 +11,7 @@
 if __name__ == '__main__':
 ```
 
+Use `from scriptname import *` in interactive shell to import the functions and variables from `scriptname.py` without running the main function.
 
 ## Hashbang
 
