@@ -78,6 +78,18 @@ def my_function():
 my_function()
 ```
 
+## Python Debugger
+Add `breakpoint()` where you want to break the code (>Python 3.7)
+c: continue
+s: step
+unt 87: execute until line 87
+unt: execute until next line
+pp: pretty print value of an expression
+l: list code context
+b 87: set a breakpoint on line 87 in the current file
+
+[more](https://realpython.com/python-debugging-pdb/#essential-pdb-commands)
+
 ## Things to add:
 * proper way to do private functions in a class
 * file read `with open("filename") as f:` 
