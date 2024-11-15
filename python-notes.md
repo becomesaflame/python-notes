@@ -51,6 +51,32 @@ OR
 `data.pop(key) #Removes the key & returns the value`  
 `data.clear() #Clear entire dictionary`  
 
+## Function timer decorator
+```python
+import time
+
+# Define a decorator to time function execution
+def timing_decorator(func):
+    def wrapper(*args, **kwargs):
+        start_time = time.time()  # Record the start time
+        result = func(*args, **kwargs)  # Call the function
+        end_time = time.time()  # Record the end time
+        elapsed_time = end_time - start_time  # Calculate elapsed time
+        # Convert elapsed time to minutes and seconds
+        minutes = int(elapsed_time // 60)  # Whole minutes
+        seconds = elapsed_time % 60  # Remaining seconds
+        print(f"{func.__name__} took {minutes}m{seconds:.1f}s to execute.")
+        return result  # Return the result of the function
+    return wrapper
+
+# Example function to be timed
+@timing_decorator
+def my_function():
+    time.sleep(125)  # Simulating a function that takes 125 seconds to execute
+
+# Call the function
+my_function()
+```
 
 ## Things to add:
 * proper way to do private functions in a class
